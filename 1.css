@@ -1,0 +1,651 @@
+@charset "utf-8";
+/* CSS Document */
+/*==================================================LINKS=======================================================*/
+a {
+	color:#069;
+	text-decoration:none;
+}
+a:hover{
+    color: #09D;
+    text-decoration: underline;
+}
+
+a.small{
+	font-size:10px;
+	text-decoration:none;
+}
+a.small:hover{
+	text-decoration:underline;
+	color:#0000FF;
+}
+
+.a3{ /* se deja este nombre para facilitar la reutilizacion*/
+    color:#FFF;
+    text-decoration:none;
+}
+.a3:hover{
+    text-decoration:underline;
+}
+
+.listacontenido {
+    font-family: arial, verdana; 
+    font-size: 65%;
+}
+.listacontenido ul {
+   margin-left: -15px ;
+}
+
+*:first-child+html .listacontenido ul {
+    margin-left: 10px ;
+}
+* html .listacontenido ul {
+    margin-left: 10px ;
+}
+
+.listacontenido li {
+    list-style: none;    
+}
+.listacontenido li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #9090BC;
+}
+
+.listacontenido li a:hover {
+    text-decoration: underline;
+}
+.listacontenido td {
+    border-right: 1px solid #AAAABC;
+    vertical-align: text-top;
+    text-align: left;
+}
+
+
+/*=====================================================TABLAS===================================================*/
+table.menu {
+	font-size:12px;
+	border-width:0;
+	width:128px;
+}
+table.menu td{	
+	background:url(images/recuadro1.png) no-repeat center;
+	text-align:center;
+	height:55px;
+}
+table.menu td:hover, table.menu td.activo  {
+	background:url(images/recuadro2.png) no-repeat center;
+}
+table.menu td a {
+	text-decoration:none;
+	font-weight:bold;
+}
+
+table.menu td a:hover {
+	text-decoration:underline;
+	color:#0000FF;
+}
+
+table.cuestionario {
+	margin:0 10px;
+}
+
+.cb{
+	border-width:0 0 1px;
+	border-color:#CCCCDF;
+	border-style:dashed;
+	padding:10px 0;
+}
+
+table td.sobre:hover{
+	background-color:#B2EAE7;
+}
+table tr.sobre:hover{
+	background-color:#B2EAE7;
+        color: #660;
+} 	
+
+table.formulario {
+    color: #444;
+    font-size: 10px;
+}
+
+table.formulario td {
+	padding:5px;
+}
+table.formulario tr:hover {
+	background-color: #DDD;
+}
+
+
+
+table.listado {
+	font-size:10px;
+	margin:5px;
+}
+table.listado td {
+	padding:3px 0;
+}
+
+table.semestres{
+	border-width:3px 3px 0;
+	border-color:#666;
+	border-style:solid;
+	background-color:#CCC;	
+	font-weight:bold;
+        font-size: 10px;
+}
+table.semestres td{
+	border-width:0;
+	border-style:solid;
+	border-color:#DDD;
+	background-color:#666;
+	padding:3px;
+}
+
+table.materias th{
+	background-color:#CCCCCC;
+	font-size:10px;
+	font-weight:bold;
+	padding:3px;
+}
+table.materias td{
+	border-width:0 1px 1px 0;
+	border-style:dotted;
+	border-color:#E5E5E5;
+	font-size:12px;
+	padding:3px;
+}
+table.materias tr:hover {
+    background-color: #DDD;
+}
+
+table.ficha {
+	border:2px solid #7C7C4D;
+}
+
+table.ficha th{
+	background-color:#7C7C4D;
+	font-size:10px;
+	font-weight:bold;
+	padding:3px;
+	text-align:left;
+	color:#FFFFFF;
+}
+table.ficha td{
+	border-width:0 0 1px ;
+	border-style:dotted;
+	border-color:#BBB;
+	font-size:12px;
+	padding:3px;
+	letter-spacing:1px;
+}
+table.ficha tr:hover {
+    background-color: #FFFF66;
+}
+
+table.cpracticas{
+    border-width: 1px 0 0 1px;
+    border-style: solid;
+    border-color: #444;
+}
+
+table.cpracticas th{
+    background-color: #DDD;
+    font-size: 10px;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: #444;
+}
+table.cpracticas td, table.pracreal td{
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: #444;
+}
+table.pracreal {
+    border: 1px solid #444;
+}
+table.pracreal th {
+    background-color: #FFF;
+    font-size: 10px;
+    border-width: 2px 0 2px 2px;
+    border-style: solid;
+    border-color: #444;    
+}
+
+
+/***********/
+table.casignaturas{
+    border-width: 1px 0 0 1px;
+    border-style: dotted;
+    border-color: #999;
+}
+
+table.casignaturas th{
+    background-color: #DDD;
+    font-size: 10px;
+    border-width: 0 1px 1px 0;
+    border-style: dotted;
+    border-color: #999;
+}
+table.casignaturas td{
+    border-width: 0 1px 1px 0;
+    border-style: dotted;
+    border-color: #999;
+}
+
+/***********/
+
+table.lpracticas th{
+    background-color: #EEE;
+    font-size: 10px;
+}
+
+table.lpracticas td{
+    font-size: 10px;
+}
+
+/****************************[TABLA CON CABECERA FIJA PARA listadoficha.php y directorio.php (EXTERNO)**************************/
+.fixed_headers {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+.fixed_headers th {
+  //text-decoration: underline;
+}
+.fixed_headers th,
+.fixed_headers td {
+  padding: 5px;
+  text-align: left;
+}
+.fixed_headers td:nth-child(1),
+.fixed_headers th:nth-child(1) {
+  min-width: 10px;
+}
+.fixed_headers td:nth-child(2),
+.fixed_headers th:nth-child(2) {
+  min-width: 350px;
+}
+.fixed_headers td:nth-child(3),
+.fixed_headers th:nth-child(3) {
+  min-width: 20px;
+}
+.fixed_headers td:nth-child(4),
+.fixed_headers th:nth-child(4) {
+  min-width: 20px;
+}
+.fixed_headers td:nth-child(5),
+.fixed_headers th:nth-child(5) {
+  width: 380px;
+}
+.fixed_headers thead {
+ //background-color: #333333;
+//  color: #fdfdfd;
+}
+.fixed_headers thead tr {
+  display: block;
+  position: relative;
+}
+.fixed_headers tbody {
+  display: block;
+  overflow: auto;
+  width: 100%;
+  height: 400px;
+}
+.fixed_headers tbody tr:nth-child(even){
+ // background-color: #dddddd;
+}
+
+
+
+
+/*======================================================CUERPOS DE CONTENIDO=================================================*/
+body {
+	font-family: Arial,Verdana, Helvetica, sans-serif;
+	color:#444;
+	margin:0;
+	background-color:#F6F6F6;
+        height: 100%;
+}
+
+#header, #header2 {
+	padding:0;
+	margin:0 auto;
+	width:930px;
+	background:#FCFCFF url(images/bord_sup.jpg) bottom center;
+	text-align:center;
+	height:150px;
+}
+#header2 {
+    height: 100px;
+}
+
+.container {
+	margin:0 auto;
+	width:920px;
+	//background: center url(images/fondobody1.jpg) repeat-y #FFF;
+	height:auto;
+	padding:0;
+}
+.leftpanel {
+        position:relative;
+        float:left;
+        width:135px;
+        margin-top:0;
+        margin-left:10px;
+        top:0;
+        border-right:1px #DDD dashed;
+}
+
+#content {
+        position:relative;
+        float:left;
+        margin:0 0 0 10px;
+        padding:0;
+        width:750px;
+}
+
+#banner {
+	position:relative;
+	margin:0 auto;
+	background:#F6F6F6 url(images/bord_inf.jpg) top center no-repeat;
+	float:none;
+	border-width:0 0 2px;;
+	border-color:#666;
+	padding:0 15px;
+	width:900px;
+	font-size:80%;
+}
+
+#footer {
+	padding:0;
+	margin:auto;
+	height:50px;
+	position:relative;
+	float:none;
+	width:900px;
+	background-color:#F6F6F6;
+}
+span .textolargo{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#ABABBC;
+	text-align:justify;
+}
+span .pie {
+	text-align:center;
+	font-size:75%;
+	color:#CCCCCC;
+}
+/*usado en finencuesta.php*/
+p.fin {
+	padding:0 10px;
+}
+
+div.menuh{
+	font-size:12px;
+	border-bottom:2px #54572C solid;
+	font-weight:bold;
+	margin:5px 0 0;
+	background-color:#D4D5CA;
+}
+div.menuh ul{
+	margin:0;
+}
+div.menuh ul li{
+	padding:3px 10px;
+	list-style:none;
+	display:inline-table;
+}
+div.menuh ul li.activo{
+	background-color:#F3F3F0;
+	border:2px #54572C solid;
+	border-bottom:2px #F3F3F0 solid;
+	margin-bottom:-2px;
+}
+div.menuh ul li a{
+	text-decoration:none;
+	color:#54572C;
+}
+div.menuh ul li a:hover{
+	text-decoration:none;
+	color:#00F;
+}
+
+div.menuh ul li a.activo{
+	background-color:#F3F3F0;
+}
+
+div.leyenda {
+	width:746px; 
+	height:20px; 
+	border-width:0 1px 1px; 
+	border-style:solid; 
+	border-color:#999; 
+	background-color:#FFF; 
+	font-size:10px; 
+	padding:2px 0 0 2px;	
+}
+div.leyenda img {
+	vertical-align:middle;
+	border:0;
+}
+
+/*Listado general para mai*/
+
+div.listadog {
+	overflow:auto;
+	height:400px;
+	margin: auto;
+	width:850px;
+	/*float:left;*/
+}
+
+div.listadog table {
+	border:1px solid #CCC;
+	font-size:12px;
+	color:#333;
+}
+
+div.listadog table td {
+	padding:2px;
+	border-bottom:1px solid #CCC;
+	border-right:1px solid #CCC;
+}
+div.listadog table tr:hover {
+	background-color:#F0F6E4;
+}
+
+#espera{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+    visibility: hidden;
+    background-color: #999;
+    z-index: 1000;
+    filter:alpha(opacity=60);
+    -moz-opacity:0.60;
+    -khtml-opacity: 0.60;
+    opacity: 0.60;
+
+}
+#guardando{
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    width: 300px;
+    z-index:1001;
+    visibility: hidden;
+}
+
+
+
+/*=======================================================FIELDSETS=====================================================*/
+fieldset {
+	border:1px #CFE2CE solid;
+	background-color:#F6FAFF;
+	/*width:865px;	*/
+}
+
+legend {
+	font-size:12px;
+	margin:0 0 0 10px !important;
+	color:#666;
+	background-color:#CFE2CE;
+	padding:3px 5px;
+	font-weight:bold;
+        width: auto !important;
+}
+
+/*=========================================================TITULOS Y TEXTOS REMARCADOS==================================*/
+h1,h2,h3 {
+	color:#666;
+        margin: 0;
+}
+h1,h4 {
+	font-size:14px;
+}
+h2 {
+	font-size:12px;
+}
+h3 {
+	font-size:10px;
+}
+
+h4 {
+    color: #448;
+    margin: 0;
+    display: inline;
+}
+
+.f {
+	font-size:14px;
+	color:#3B4810;
+}
+p.f {
+	font-size:14px;
+	color:#3B4810;
+	text-indent:-20px;
+	margin-left:20px;
+	margin-top:0;
+}
+.e{
+	color:#666;
+	font-size:11px;
+	text-transform:uppercase;
+	text-align:left;
+	margin:0;
+	border:0;
+}
+
+.lock {
+	font-weight:bold; 
+	text-decoration: none; 
+	color: #990000; 
+	font-size: 10px;
+}
+
+.dir {
+    font-weight: bold;    
+    font-size: 14px;
+    color: #448;
+}
+
+.dirs{
+    font-weight: lighter;
+    font-size: 10px;
+    color: #9090BC;
+}
+/*=========================================================INPUTS=======================================================*/
+
+input[type='text'], input[type='password'] {
+	/*background:repeat-x top url(images/fondo_input.png);*/
+	font-family:Arial,"Times New Roman",Times,serif,Georgia;
+	font-size:90%;
+	font-weight:bold;
+	border:1px #CCC solid;
+}
+
+.select{
+    font-size: 10px;
+}
+/*=========================================================IMAGENES=======================================================*/
+
+img {
+    vertical-align: middle;
+    border: 0;
+    display: inline;
+}
+/*=========================================================BOTONES========================================================*/
+
+button{
+    padding: 5px;
+}
+
+
+/*=========================================================EXTERNOS=======================================================*/
+/*Credits: Dynamic Drive CSS Library */
+/*URL: http://www.dynamicdrive.com/style/ */
+
+.underlinemenu{
+    margin: 0;
+    padding: 0;
+}
+
+.underlinemenu ul{
+    margin: 0;
+    margin-bottom: 1em;
+    padding-left: 0;
+    float: left;
+    font-weight: bold;
+    /*font-size: 10px;*/
+    width: 100%;
+    border: 1px solid #DFDFDF;
+    border-width: 1px 0;
+    //height: 22px;
+}
+
+/*IE only rule. Delete extra margin-bottom*/
+* html .underlinemenu ul{
+    margin-bottom: 0;
+}
+
+.underlinemenu ul li{
+    display: inline;
+}
+
+
+.underlinemenu ul li a{
+    float: left;
+    color: #069;
+    font-weight: bold;
+    padding: 2px 6px 4px 6px;
+    text-decoration: none;
+    background: #FFF url(images/menudivide.gif) top right repeat-y;
+}
+
+.underlinemenu ul li a.b{
+    float:right;
+    color: gray;
+    font-weight: bold;
+    padding: 2px 6px 4px 6px;
+    text-decoration: none;
+    background: #FFF url(images/menudivide.gif) top left repeat-y;
+}
+
+
+.underlinemenu ul li a:hover{
+    color: black;
+    background-color: #F6F6F6;
+    border-bottom: 4px solid black;
+    padding-bottom: 0;
+}
+
+//para hacer scroll el menu de botton dropdown menu de bootstrap
+.scrollable-menu{
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
